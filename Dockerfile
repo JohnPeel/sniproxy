@@ -6,6 +6,6 @@ RUN	apk update \
 
 COPY overlay/ /
 
-EXPOSE 443
+EXPOSE 80 443
 
 CMD [ "sniproxy", "-f", "-c", "/etc/sniproxy.conf" ]
